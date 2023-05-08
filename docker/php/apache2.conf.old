@@ -1,0 +1,11 @@
+ServerRoot "/etc/apache2"
+DocumentRoot "/var/www/html/public"
+
+<Directory "/var/www/html/public">
+    Options Indexes FollowSymLinks
+    AllowOverride All
+    Require all granted
+</Directory>
+
+#LoadModule mod_prefork_module /usr/lib/apache2/modules/mod_mpm_prefork.so
+#LoadModule mpm_itk_module /usr/lib/apache2/modules/mod_mpm_itk.so
